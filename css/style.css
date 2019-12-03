@@ -64,3 +64,16 @@ ul {
   background-color: pink;
   text-align: center;
 }
+.contact {
+  background-color: white;
+}
+.contact_logo {
+  text-align: center;
+  height: 100px;
+  background-color: purple;
+}
+.form_online{
+  height: 200px;
+  background-color: pink;
+  text-align: center;
+}
