@@ -1,3 +1,8 @@
+.prova {
+  height: 40px;
+  border: 1px solid black;
+}
+
 .nav_bar {
   background-color: #2C3E50;
 }
@@ -33,4 +38,29 @@ ul {
 .image_jumbo {
   height: 600px;
   background-color: #EDB98A;
+}
+
+.portfolio {
+  background-color: yellow;
+}
+.portfolio_logo {
+  height: 100px;
+  background-color: purple;
+}
+.portfolio_detail div{
+  height: 200px;
+  background-color: pink;
+  text-align: center;
+}
+.about {
+  background-color: #1ABC9C
+}
+.about_logo {
+  height: 100px;
+  background-color: purple;
+}
+.about_detail div{
+  height: 200px;
+  background-color: pink;
+  text-align: center;
 }
