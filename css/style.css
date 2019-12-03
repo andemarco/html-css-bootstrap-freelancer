@@ -1,0 +1,27 @@
+.nav_bar {
+  background-color: blue;
+}
+.nav_bar_left {
+  height: 80px;
+  background-color: green
+}
+.nav_bar_right {
+  line-height: 80px;
+  background-color: yellow;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.nav_bar_right ul li {
+  list-style: none;
+}
+
+.display_inline_block {
+  display: inline-block;
+}
+.nav_bar_button {
+  display: none;
+}
