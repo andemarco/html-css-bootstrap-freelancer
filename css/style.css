@@ -1,5 +1,5 @@
 .nav_bar {
-  background-color: blue;
+  background-color: #2C3E50;
 }
 .nav_bar_left {
   height: 80px;
@@ -24,4 +24,13 @@ ul {
 }
 .nav_bar_button {
   display: none;
+}
+
+.jumbo {
+  height: 600px;
+  background-color: #1ABC9C
+}
+.image_jumbo {
+  height: 600px;
+  background-color: #EDB98A;
 }
