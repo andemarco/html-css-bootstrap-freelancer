@@ -1,68 +1,137 @@
-
-.nav_bar {
-  background-color: #2C3E50;
-}
-.nav_bar_left {
-  height: 80px;
-  background-color: green
-}
-.nav_bar_right {
-  line-height: 80px;
-  background-color: yellow;
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.nav_bar_right ul li {
-  list-style: none;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
+.color_white {
+  color: white;
+}
+.color_blue {
+  color: #2C3E50;
+}
 .display_inline_block {
   display: inline-block;
 }
-.nav_bar_button {
-  display: none;
+.wrap_60 {
+  width: 60%;
+  margin: 0 auto;
+}
+.divider {
+  width: 80%;
+  margin: 0 auto;
+}
+.hr_divider {
+  display: inline-block;
+  width: 100%;
+  max-width: 10%;
+  border: solid 2px white;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+.hr_divider_blue {
+  display: inline-block;
+  width: 100%;
+  max-width: 10%;
+  border: solid 2px #2C3E50;
+  vertical-align: middle;
+  margin: 0 15px;
+}
+.star_divider {
+  font-size: 2.1em;
+  vertical-align: middle;
+}
+.padding_70 {
+  padding: 70px 0;
+}
+.title_section_blue {
+  color: #2C3E50;
+  font-weight: 700;
+  font-size: 3em;
+
+}
+.title_section_white{
+  color: white;
+  font-weight: 700;
+  font-size: 3em;
 }
 
-.jumbo {
-  height: 600px;
+/* HEADER TOP */
+.header_top {
+  background-color: #2C3E50;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+/* NAV BAR LEFT */
+.nav_bar_left a {
+  font-size: 1.75em;
+}
+.nav_bar_left a:hover {
+  text-decoration: none;
+  color: white;
+}
+/* NAV BAR RIGHT */
+.nav_bar_right {
+font-size: 1.2em;
+}
+.nav_bar_right ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_bar_right li {
+  margin-left: 22px;
+}
+.nav_bar_right a:hover {
+  text-decoration: none;
+  color: #1ABC9C;
+}
+/* BUTTON SM VERSION */
+.nav_bar_button span {
+  padding-left: 3px;
+  vertical-align:text-top;
+}
+.button_green {
+  padding: 12px;
+  border-radius: 13%;
   background-color: #1ABC9C
 }
-.image_jumbo {
-  height: 600px;
-  background-color: #EDB98A;
+/* MAIN */
+/* JUMBO MAIN SECTION*/
+.jumbo {
+  margin-top: 80px;
+  background-color: #1ABC9C;
+  line-height: 50px;
 }
-
-.portfolio {
-  background-color: yellow;
+.jumbo_content img {
+  width: 15em;
 }
-.portfolio_logo {
+.jumbo h1{
+  font-weight: 700;
+  font-size: 4em;
+}
+.jumbo p {
+  font-size: 1.5em;
+}
+ /* SECOND SECTION */
+.section_logo {
+  text-align: center;
   height: 100px;
-  background-color: purple;
 }
 .box {
   height: 200px;
   text-align: center;
   background-color: lightgrey;
-  margin-bottom: 20px;
+  margin: 15px 0;
 }
 .about {
   background-color: #1ABC9C
 }
-.about_logo {
-  height: 100px;
-  background-color: purple;
-}
 .contact {
   background-color: white;
-}
-.contact_logo {
-  text-align: center;
-  height: 100px;
-  background-color: purple;
 }
 .form_online{
   height: 200px;
@@ -77,4 +146,27 @@ ul {
 .footer_down {
   background-color: #1A252F;
   text-align: center;
+}
+
+
+@media screen and (max-width: 992px) {
+  .wrap_xs {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .nav_bar_left a {
+    font-size: 1.25em;
+  }
+  .jumbo_content img {
+    width: 13em;
+  }
+  .jumbo h1{
+    font-weight: 700;
+    font-size: 3em;
+  }
+  .jumbo p {
+    font-size: 1.1em;
+  }
+
 }
