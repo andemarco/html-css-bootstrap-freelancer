@@ -19,7 +19,7 @@ body {
   width: 80%;
   margin: 0 auto;
 }
-.hr_divider {
+.hr_divider_white {
   display: inline-block;
   width: 100%;
   max-width: 10%;
@@ -40,7 +40,12 @@ body {
   vertical-align: middle;
 }
 .padding_70 {
-  padding: 70px 0;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.padding_30 {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .title_section_blue {
   color: #2C3E50;
@@ -117,15 +122,14 @@ font-size: 1.2em;
   font-size: 1.5em;
 }
  /* SECOND SECTION */
-.section_logo {
-  text-align: center;
-  height: 100px;
-}
 .box {
-  height: 200px;
-  text-align: center;
-  background-color: lightgrey;
-  margin: 15px 0;
+  max-width: 100%;
+  margin-bottom: 30px;
+  position: relative;
+}
+.portfolio img {
+  width: 100%;
+  border-radius: 3%;
 }
 .about {
   background-color: #1ABC9C
@@ -138,6 +142,31 @@ font-size: 1.2em;
   background-color: pink;
   text-align: center;
 }
+.cover_box {
+  width: 100%;
+  height: 100%;
+  background-color: #1ABC9C;
+  position: absolute;
+  border-radius: 3%;
+  opacity: 90%;
+  display: none;
+}
+.cover_box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5em;
+}
+.box:hover .cover_box{
+  display: block;
+  cursor: pointer;
+}
+/* THIRD MAIN S£ECTION */
+.detail_text {
+  font-size: 1.25em;
+  line-height: 22px;
+}
 
 .footer_up {
   background-color: #2C3E50;
@@ -148,13 +177,15 @@ font-size: 1.2em;
   text-align: center;
 }
 
-
-@media screen and (max-width: 992px) {
-  .wrap_xs {
+@media screen and (max-width: 768px) {
+  .wrapper_xs_100 {
     width: 100%;
     margin: 0 auto;
   }
-
+  .wrapper_xs_60 {
+    width: 60%;
+    margin: 0 auto;
+  }
   .nav_bar_left a {
     font-size: 1.25em;
   }
@@ -168,5 +199,22 @@ font-size: 1.2em;
   .jumbo p {
     font-size: 1.1em;
   }
-
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .wrapper_sm_60 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .portfolio img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .wrapper_sm_60 {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .portfolio img {
+    width: 100%;
+  }
 }
